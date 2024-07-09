@@ -37,28 +37,27 @@ Oyunumuz Brotato oyunun mekaniklerini baz alarak tasarlanan bir oyundur. 2D olan
 - Sonrasında fikirler tekrar tartışarak  **Mystiq** oyununa karar verildi.
 - Sprint içi puan değerlendirmesi 10 olarak belirlenmiştir.
 - **Puan tamamlama mantığı**: Proje boyunca tamamlanması gereken backlog puanı 36'dır. İlk Sprint için bitirilmesi istenilen puan sayısı 10 olarak belirlenmiştir.
-- **Daily Scrum**: Discord üzerinden iletişim sağlanmış olup her hafta cuma saat 21.00 satinde toplantı alınacaktır. Hastasonu ile beraber discord kanallarında proje üzerinde ekipçe çalışılacaktır.
+- **Daily Scrum**: Discord üzerinden iletişim sağlanmış olup her hafta cuma saat 21.00 satinde toplantı alınacaktır. Haftasonu ile beraber discord kanallarında proje üzerinde ekipçe çalışılacaktır.
 
 Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="en" data-id="a/tT5yDdA"  ><a href="https://imgur.com/gallery/whatsapp-screenshotslar-zbIbELe">Whatsapp</a></blockquote>
                                     <blockquote class="imgur-embed-pub" lang="en" data-id="a/tT5yDdA"  ><a href="https://imgur.com/gallery/discord-screenshotslar-uNKjkl5">Discord</a></blockquote>
 
-- **Tasarım ve Developing Mantığı**: Tasarım tarafı aynı zamanda developing kısmında da çalışacaktır. 1. ve 2. Sprint'te tasarım dilinin tam oturması için ayrı grup oluşturulması takımca doğru bulunmuştur.
-- **Tasarım Grubu Üyeleri**: Arif, Kevser, Hilal.
+- **Tasarım ve Developing Mantığı**: Tasarım tarafı aynı zamanda developing kısmında da çalışacaktır. Model olarak hazır asset kullanacak olup developing tarafına 
+- **Tasarım Grubu Üyeleri**: Halil İbrahim Yavuz.
+- **Developing Grubu Üyeleri**: Hilal Güzel, Hasan Can Öte, İlayda Garipoğlu.
 - **Sprint 1 board task and to-do list**: Notion Task Screenshot:
   
 ![Ekran Resmi 2024-07-09 21 41 15](https://github.com/hilalguzel/threejs-homework/assets/101393646/041f94b5-d5da-462d-a529-2f9803444ee0)
 
 **Sprint Review**:
-- Map ve karakterlerin sayısına, low poly bir tasarım diline hakim olmasına karar verilmiştir.
-- Sprint Review katılımcıları: Ahmet Yunus Turna, Arif Furkan Karaca, Kevser Bilgiç, Umut Yiğit, Hilal Karakuş.
+- Oyunun 2D boyutlu olmasına ve karmaşık bir yapıdan uzak basit mekanikler ve güçlü VFX ile oyunun tasarımına karar kılınmıştır.
+- Sprint Review katılımcıları: Hilal Güzel, Hasan Can Öte, Halil İbrahim Yavuz.
 
-
-
-  **Sprint Retrospective:**
-- Roller ile ilgili düzenleme yapılmış, product owner değişmiştir.
-- Tasarım grubu ile ayrı toplantı yapıldı. Modelleme konusunda görev dağılımı yapılmıştır.
-- Karakterin hareket animasyonları ve mekanikleri eklenmiştir.
-- Map üzerindeki platformlara mekanikler eklenmiştir.
+**Sprint Retrospective:**
+- Roller ile ilgili düzenleme yapılmış, oyun hikayesi değişmiştir.
+- Görev dağılımları yapılıp notion üzerinden to-do list yapılmıştır.
+- Karakterin hareket animasyonları, spriteları ve assetler belirlenmiştir.
+- Proje ilk adımları ile başlanmıştır.
 
 
   
