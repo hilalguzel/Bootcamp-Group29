@@ -32,7 +32,15 @@ Oyunumuz Brotato oyunun mekaniklerini baz alarak tasarlanan bir oyundur. 2D olan
 
 ---
 # **SPRINT 1**
-- Takımlar açıklandıktan hemen sonra takım tanışma toplantısı yapıldı.
+- Takımlar açıklandıktan hemen sonra takım tanışma toplantısı yapılıp whatsapp, discord ve slack grupları kurulmuştur.
+  
+  ![Ekran Resmi 2024-07-09 20 50 37](https://github.com/hilalguzel/threejs-homework/assets/101393646/a6f40c0b-1483-4d2f-965e-75ed05b8638a)
+
+  ![Ekran Resmi 2024-07-09 20 35 12](https://github.com/hilalguzel/threejs-homework/assets/101393646/de4e5df4-ebdb-4da3-8b69-492fd94bbccb)
+
+  ![Ekran Resmi 2024-07-09 20 41 17](https://github.com/hilalguzel/threejs-homework/assets/101393646/67930229-95e4-45be-9765-f0706f3244eb)
+
+  
 - Verilen direktifler doğrultusunda korku oyunun karar verildi.
 - Sonrasında fikirler tekrar tartışarak  **Mystiq** oyununa karar verildi.
 - Sprint içi puan değerlendirmesi 10 olarak belirlenmiştir.
