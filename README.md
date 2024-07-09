@@ -30,3 +30,31 @@ Oyunumuz Brotato oyunun mekaniklerini baz alarak tasarlanan bir oyundur. 2D olan
 - 12+
 - Mobil ve PC oyuncuları
 
+---
+# **SPRINT 1**
+- Sprint içi puan değerlendirmesi 10 olarak belirlenmiştir.
+- **Puan tamamlama mantığı**: Proje boyunca tamamlanması gereken backlog puanı 36'dır. İlk Sprint için bitirilmesi istenilen puan sayısı 10 olarak belirlenmiştir ve hedefe ulaşılmıştır.
+- **Daily Scrum**: Whatsapp üzerinden görüşmeler sağlanmıştır. Tasarım grubu ve Ana Grup olarak iki adet grup oluşturuluştur.
+
+Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="en" data-id="a/tT5yDdA"  ><a href="//imgur.com/a/tT5yDdA">Whatsapp</a></blockquote>
+
+- **Tasarım ve Developing Mantığı**: Tasarım tarafı aynı zamanda developing kısmında da çalışacaktır. 1. ve 2. Sprint'te tasarım dilinin tam oturması için ayrı grup oluşturulması takımca doğru bulunmuştur.
+- **Tasarım Grubu Üyeleri**: Arif, Kevser, Hilal.
+- **Sprint 1 board task and to-do list**: Notion Task Screenshot:
+  
+![Ekran Resmi 2024-07-09 21 41 15](https://github.com/hilalguzel/threejs-homework/assets/101393646/041f94b5-d5da-462d-a529-2f9803444ee0)
+
+**Sprint Review**:
+- Map ve karakterlerin sayısına, low poly bir tasarım diline hakim olmasına karar verilmiştir.
+- Sprint Review katılımcıları: Ahmet Yunus Turna, Arif Furkan Karaca, Kevser Bilgiç, Umut Yiğit, Hilal Karakuş.
+
+
+
+  **Sprint Retrospective:**
+- Roller ile ilgili düzenleme yapılmış, product owner değişmiştir.
+- Tasarım grubu ile ayrı toplantı yapıldı. Modelleme konusunda görev dağılımı yapılmıştır.
+- Karakterin hareket animasyonları ve mekanikleri eklenmiştir.
+- Map üzerindeki platformlara mekanikler eklenmiştir.
+
+
+  
