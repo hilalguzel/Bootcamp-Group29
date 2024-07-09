@@ -32,9 +32,12 @@ Oyunumuz Brotato oyunun mekaniklerini baz alarak tasarlanan bir oyundur. 2D olan
 
 ---
 # **SPRINT 1**
+- Takımlar açıklandıktan hemen sonra takım tanışma toplantısı yapıldı.
+- Verilen direktifler doğrultusunda korku oyunun karar verildi.
+- Sonrasında fikirler tekrar tartışarak  **Mystiq** oyununa karar verildi.
 - Sprint içi puan değerlendirmesi 10 olarak belirlenmiştir.
-- **Puan tamamlama mantığı**: Proje boyunca tamamlanması gereken backlog puanı 36'dır. İlk Sprint için bitirilmesi istenilen puan sayısı 10 olarak belirlenmiştir ve hedefe ulaşılmıştır.
-- **Daily Scrum**: Whatsapp üzerinden görüşmeler sağlanmıştır. Tasarım grubu ve Ana Grup olarak iki adet grup oluşturuluştur.
+- **Puan tamamlama mantığı**: Proje boyunca tamamlanması gereken backlog puanı 36'dır. İlk Sprint için bitirilmesi istenilen puan sayısı 10 olarak belirlenmiştir.
+- **Daily Scrum**: Discord üzerinden iletişim sağlanmış olup her hafta cuma saat 21.00 satinde toplantı alınacaktır. Hastasonu ile beraber discord kanallarında proje üzerinde ekipçe çalışılacaktır.
 
 Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="en" data-id="a/tT5yDdA"  ><a href="https://imgur.com/gallery/whatsapp-screenshotslar-zbIbELe">Whatsapp</a></blockquote>
                                     <blockquote class="imgur-embed-pub" lang="en" data-id="a/tT5yDdA"  ><a href="https://imgur.com/gallery/discord-screenshotslar-uNKjkl5">Discord</a></blockquote>
