@@ -33,13 +33,12 @@ Oyunumuz Brotato oyunun mekaniklerini baz alarak tasarlanan bir oyundur. 2D olan
 ---
 # **SPRINT 1**
 - Takımlar açıklandıktan hemen sonra takım tanışma toplantısı yapılıp whatsapp, discord ve slack grupları kurulmuştur.
-  
-  ![Ekran Resmi 2024-07-09 20 50 37](https://github.com/hilalguzel/threejs-homework/assets/101393646/a6f40c0b-1483-4d2f-965e-75ed05b8638a)
 
-  ![Ekran Resmi 2024-07-09 20 35 12](https://github.com/hilalguzel/threejs-homework/assets/101393646/de4e5df4-ebdb-4da3-8b69-492fd94bbccb)
-
-  ![Ekran Resmi 2024-07-09 20 41 17](https://github.com/hilalguzel/threejs-homework/assets/101393646/67930229-95e4-45be-9765-f0706f3244eb)
-
+  <img src = "https://github.com/hilalguzel/Bootcamp-Group29/blob/cf063152036c8645d17dd5565e52ffd51a67b6c1/Ekran%20Resmi%202024-07-07%2022.38.14.png" />
+  <p></p>
+  <img src="https://github.com/hilalguzel/Bootcamp-Group29/blob/cf063152036c8645d17dd5565e52ffd51a67b6c1/Ekran%20Resmi%202024-07-07%2022.32.24.png" width="800" />
+  <p></p>
+  <img src = "https://github.com/hilalguzel/Bootcamp-Group29/blob/7b5907482d217efb4aa8f1872f6765ccf19776ab/Ekran%20Resmi%202024-07-09%2020.35.12.png" />
   
 - Verilen direktifler doğrultusunda korku oyunun karar verildi.
 - Sonrasında fikirler tekrar tartışarak  **Mystiq** oyununa karar verildi.
@@ -55,7 +54,8 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
 - **Developing Grubu Üyeleri**: Hilal Güzel, Hasan Can Öte, İlayda Garipoğlu.
 - **Sprint 1 board task and to-do list**: Notion Task Screenshot:
   
-![Ekran Resmi 2024-07-09 21 41 15](https://github.com/hilalguzel/threejs-homework/assets/101393646/041f94b5-d5da-462d-a529-2f9803444ee0)
+<img src = "https://github.com/hilalguzel/Bootcamp-Group29/blob/main/Ekran%20Resmi%202024-07-09%2021.41.15.png"/>
+<p></p>
 
 **Sprint Review**:
 - Oyunun 2D boyutlu olmasına ve karmaşık bir yapıdan uzak basit mekanikler ve güçlü VFX ile oyunun tasarımına karar kılınmıştır.
