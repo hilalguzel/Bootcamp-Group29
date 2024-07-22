@@ -70,5 +70,7 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: İkinci sprintte online sistemini entegre edilemediğinden dolayı üçüncü sprint  puanı 15 olarak belirlenmiştir.
 
-- **Sprint board update**: Sprint board screenshotı: 
+- **Sprint board update**: Sprint board screenshotı:
+  ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/Ekran%20Resmi%202024-07-22%2019.38.52.png) 
+
 
