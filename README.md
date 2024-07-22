@@ -6,9 +6,7 @@ U29 Unity Takımı
 ## Takım Üyeleri
 - ***Hilal Güzel*** - Scrum Master / Developer
 - ***Halil İbrahim Yavuz*** - Level Designer
-- ***Hasan Can Öten*** - Developer
-- ***İlayda Garipoğlu*** - Product Owner / Developer
-
+- ***Hasan Can Öten*** - Developer / Developer
 
 ## Oyun İsmi
 
