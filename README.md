@@ -85,6 +85,8 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
   - Karakter ve çevre assetleri, sprite ve animasyonlar oyuna entegre edildi. Karakter kontrolü , manage sistemi, ateş ve düşman kontrollerin scriptleri yazıldı.
   - Sprint Review katılımcıları: Hilal Güzel, Hasan Can Öten, Halil İbrahim Yavuz.
 
+  Toplantı ScreenShotları <blockquote class="imgur-embed-pub" lang="en" data-id="a/tT5yDdA"  ><a href="https://imgur.com/gallery/sprint-2-screenshots-2QMVJmz">Discord</a></blockquote>
+
 - **Sprint Retrospective:**
     - **Sprint 2 için alınan puan 11'dir.** Map tasarımı diğer sprint'e kalmıştır.
     - Takım içi daha hızlı aksiyon alması adına uyarılmıştır.
