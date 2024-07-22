@@ -71,6 +71,25 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
 - **Sprint içinde tamamlanması tahmin edilen puan**: İkinci sprintte online sistemini entegre edilemediğinden dolayı üçüncü sprint  puanı 15 olarak belirlenmiştir.
 
 - **Sprint board update**: Sprint board screenshotı:
-  ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/Ekran%20Resmi%202024-07-22%2019.38.52.png) 
+  ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/Ekran%20Resmi%202024-07-22%2019.38.52.png)
+
+  - **Ürün Durumu**: Ekran görüntüleri:
+    
+  ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/0_Fallen_Angels_Idle_003.png)
+
+  ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/0_Fallen_Angels_Slashing_006.png)
+
+- **Sprint Review**: 
+
+  - Takım ile beraber nasıl daha hızlı adım atılabilir konuşuldu.
+  - Karakter ve çevre assetleri, sprite ve animasyonlar oyuna entegre edildi. Karakter kontrolü , manage sistemi, ateş ve düşman kontrollerin scriptleri yazıldı.
+  - Sprint Review katılımcıları: Hilal Güzel, Hasan Can Öten, Halil İbrahim Yavuz.
+
+- **Sprint Retrospective:**
+    - **Sprint 2 için alınan puan 11'dir.** Map tasarımı diğer sprint'e kalmıştır.
+    - Takım içi daha hızlı aksiyon alması adına uyarılmıştır.
+    - Karakterin çoğu animasyonları ve mekanikleri entegre edilmiştir.
+    - Map'e başlandı ama devamını bir diğer sprinte devam edilesi kararı alınmıştır.
+      
 
 
