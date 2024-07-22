@@ -65,5 +65,10 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
 - Karakterin hareket animasyonları, spriteları ve assetler belirlenmiştir.
 - Proje ilk adımları ile başlanmıştır.
 
+  ---
+# **SPRINT 2**
 
-  
+- **Sprint içinde tamamlanması tahmin edilen puan**: İkinci sprintte online sistemini entegre edilemediğinden dolayı üçüncü sprint  puanı 15 olarak belirlenmiştir.
+
+- **Sprint board update**: Sprint board screenshotı: 
+
