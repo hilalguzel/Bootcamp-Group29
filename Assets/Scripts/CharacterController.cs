@@ -5,30 +5,48 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField]
-    float hareketHizi;
+    private float hareketHizi = 5f;
 
-    Rigidbody2D rb;
-    Animator anim;
+    private Rigidbody2D rb;
+    private Animator anim;
+
+    private bool atakYaptim;
+    private bool oyunBittimi;
 
     public GameObject atak;
-    public GameObject atakKonum;  // karakter önüne koyulacak boþ obje
+    public GameObject atakKonum;
+
+    public int puan;
+
+    public float currentHealth = 10f;
+    public float maxHealth = 10f;
+
+    public float attackInterval = 1.5f; // Ateþ etme aralýðý
+    private float attackTimer = 0f; // Zamanlayýcý
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
+
     void Start()
     {
+        oyunBittimi = false;
+        puan = 0;
         anim = GetComponent<Animator>();
+        atakYaptim = false;
+        currentHealth = 10f;
+        maxHealth = 10f;
     }
 
-    
     void Update()
     {
-        KarakterHareket();
+        HareketEttir();
         FaceMouse();
+        AttackYap();
     }
-    void KarakterHareket()
+
+    void HareketEttir()
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
@@ -42,20 +60,63 @@ public class CharacterController : MonoBehaviour
     {
         Vector3 mousePosition = Input.mousePosition;
         mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        mousePosition.z = 0; // Z eksenini sýfýrla
 
-        Vector2 direction = new Vector2(
-            mousePosition.x - transform.position.x,
-            mousePosition.y - transform.position.y
-            );
+        // Karakter ile mouse arasýndaki yön
+        Vector2 direction = (mousePosition - transform.position).normalized;
 
-        transform.right = direction;
+        // Karakterin dönmesi
+        if (direction.x > 0)
+        {
+            transform.localScale = new Vector3(0.4f, 0.4f, 1); // Sað
+        }
+        else if (direction.x < 0)
+        {
+            transform.localScale = new Vector3(-0.4f, 0.4f, 1); // Sol
+        }
+
+        // Karakterin bakýþ yönünü ayarla
+        transform.up = direction;
+
+        // `atakKonum`'un mouse'a bakmasýný saðla
+        atakKonum.transform.up = direction;
     }
 
     void AttackYap()
     {
-        //karakterin koþulsuz devamlý hasar vereceði kýsým
-        GameObject buyu = Instantiate(atak) as GameObject;
-        buyu.transform.position = atakKonum.transform.position;
-        buyu.transform.rotation = atakKonum.transform.rotation;
+        if (!oyunBittimi)
+        {
+            attackTimer += Time.deltaTime;
+            if (attackTimer >= attackInterval)
+            {
+                attackTimer = 0f;
+                atakYaptim = true;
+
+                // Ateþ topunu instantiate et
+                GameObject buyu = Instantiate(atak, atakKonum.transform.position, Quaternion.identity);
+
+                // Merminin yönünü ayarla
+                Vector2 fireDirection = (atakKonum.transform.position - transform.position).normalized;
+                buyu.transform.right = fireDirection; // Merminin yönünü ayarla
+                buyu.GetComponent<Rigidbody2D>().velocity = fireDirection * 10f; // Hýzý belirle
+
+                atakYaptim = false;
+            }
+        }
+    }
+
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Dusman"))
+        {
+            currentHealth -= 1;
+            if (currentHealth <= 0)
+            {
+                oyunBittimi = true;
+                // Oyun bitiþi ile ilgili iþlemler burada yapýlabilir
+            }
+        }
     }
 }
+
