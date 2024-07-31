@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class AtesController : MonoBehaviour
 {
-    public float speed = 10f; // Merminin hýzýný belirler
-    public float lifetime = 2f; // Merminin ömrü (kaç saniye sonra yok olacak)
+    public float speed = 10f; // Merminin hï¿½zï¿½nï¿½ belirler
+    public float lifetime = 2f; // Merminin ï¿½mrï¿½ (kaï¿½ saniye sonra yok olacak)
     private Transform target;
     private Vector2 direction;
 
     private void Start()
     {
-        // Merminin ömrünü baþlat
+        // Merminin ï¿½mrï¿½nï¿½ baï¿½lat
         Destroy(gameObject, lifetime);
     }
 
@@ -19,7 +20,7 @@ public class AtesController : MonoBehaviour
     {
         if (direction != Vector2.zero)
         {
-            // Mermiyi ileriye doðru hareket ettir
+            // Mermiyi ileriye doï¿½ru hareket ettir
             transform.Translate(direction * speed * Time.deltaTime, Space.World);
         }
         else
@@ -48,24 +49,24 @@ public class AtesController : MonoBehaviour
         {
             target = closestEnemy.transform;
             direction = (target.position - transform.position).normalized;
-            transform.right = direction; // Ateþin ucunu hedefe doðru yönlendir
+            transform.right = direction; // Ateï¿½in ucunu hedefe doï¿½ru yï¿½nlendir
         }
         else
         {
-            direction = transform.right; // Hedef yoksa düz ileriye doðru hareket et
+            direction = transform.right; // Hedef yoksa dï¿½z ileriye doï¿½ru hareket et
             Debug.Log("No enemy found. Default direction is set.");
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Mermi bir nesneye çarptýðýnda yok olmasýný saðlar
+        // Mermi bir nesneye ï¿½arptï¿½ï¿½ï¿½nda yok olmasï¿½nï¿½ saï¿½lar
         if (collision.gameObject.CompareTag("Dusman"))
         {
-            // Düþmaný etkileyin (örneðin, düþmanýn saðlýðýna zarar verin)
-            // Bu kýsmý ihtiyacýnýza göre düzenleyebilirsiniz
+            // Dï¿½ï¿½manï¿½ etkileyin (ï¿½rneï¿½in, dï¿½ï¿½manï¿½n saï¿½lï¿½ï¿½ï¿½na zarar verin)
+            // Bu kï¿½smï¿½ ihtiyacï¿½nï¿½za gï¿½re dï¿½zenleyebilirsiniz
 
-            Destroy(collision.gameObject); // Düþmaný yok et
+            Destroy(collision.gameObject); // Dï¿½ï¿½manï¿½ yok et
             Destroy(gameObject); // Mermiyi yok et
         }
     }
