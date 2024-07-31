@@ -9,6 +9,8 @@ public class AtesController : MonoBehaviour
     private Transform target;
     private Vector2 direction;
 
+    public CharacterController karakter;
+
     private void Start()
     {
         Destroy(gameObject, lifetime); // Merminin ömrünü başlat
@@ -61,6 +63,9 @@ public class AtesController : MonoBehaviour
         {
             Destroy(collision.gameObject); // Düşmanı yok et
             Destroy(gameObject); // Mermiyi yok et
+            CharacterController.Instance.puan++;
+            CharacterController.Instance.scoreText.text = CharacterController.Instance.puan.ToString() + " x ";
+           
         }
     }
 

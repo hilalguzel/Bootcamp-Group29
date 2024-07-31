@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterController : MonoBehaviour
 {
+    public static CharacterController Instance;
+
     [SerializeField]
     private float hareketHizi = 5f;
 
@@ -13,6 +16,12 @@ public class CharacterController : MonoBehaviour
     public bool oyunBittimi;
     public GameObject atak;
     public Transform atakKonum;
+
+    [SerializeField]
+    public Text scoreText;
+
+    [SerializeField]
+    private GameObject sonucPaneli;
 
     public int puan;
     public float currentHealth = 10f;
@@ -24,6 +33,7 @@ public class CharacterController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        Instance = this;
     }
 
     void Start()
@@ -32,6 +42,8 @@ public class CharacterController : MonoBehaviour
         puan = 0;
         anim = GetComponent<Animator>();
         atakYaptim = false;
+        sonucPaneli.SetActive(false);
+        scoreText.text = puan.ToString()+ " x ";
     }
 
     void Update()
@@ -98,15 +110,16 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D obje)
     {
-        if (col.gameObject.CompareTag("Dusman"))
+        if (obje.tag == ("Dusman"))
         {
             currentHealth -= 1;
             if (currentHealth <= 0)
             {
                 oyunBittimi = true;
                 Destroy(gameObject);
+                sonucPaneli.SetActive(true);
             }
         }
     }
