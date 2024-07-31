@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
+    
     [SerializeField]
     private float hareketHizi = 5f;
 
@@ -54,6 +55,13 @@ public class CharacterController : MonoBehaviour
         float vCoor = v * hareketHizi;
 
         rb.velocity = new Vector2(hCoor, vCoor);
+
+        // Karakterin yönünü belirle
+        if (h != 0)
+        {
+            // Karakter saða ya da sola hareket ediyorsa doðru yöne bakacak þekilde döndür
+            transform.localScale = new Vector3(Mathf.Sign(h) * 0.4f, 0.4f, 1);
+        }
     }
 
     void FaceMouse()
@@ -65,21 +73,11 @@ public class CharacterController : MonoBehaviour
         // Karakter ile mouse arasýndaki yön
         Vector2 direction = (mousePosition - transform.position).normalized;
 
-        // Karakterin dönmesi
-        if (direction.x > 0)
-        {
-            transform.localScale = new Vector3(0.4f, 0.4f, 1); // Sað
-        }
-        else if (direction.x < 0)
-        {
-            transform.localScale = new Vector3(-0.4f, 0.4f, 1); // Sol
-        }
-
         // Karakterin bakýþ yönünü ayarla
-        transform.up = direction;
-
-        // `atakKonum`'un mouse'a bakmasýný saðla
         atakKonum.transform.up = direction;
+
+        // Yukarý ve aþaðý hareket ederken z rotasyonunu sýfýrla
+        transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
     void AttackYap()
@@ -105,7 +103,6 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Dusman"))
@@ -119,4 +116,6 @@ public class CharacterController : MonoBehaviour
         }
     }
 }
+
+
 

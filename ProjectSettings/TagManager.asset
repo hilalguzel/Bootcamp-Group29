@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - zemin
+  - Dusman
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Mobs
   - Water
   - UI
   - 
