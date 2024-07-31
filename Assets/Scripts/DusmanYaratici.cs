@@ -8,7 +8,7 @@ public class DusmanYaratici : MonoBehaviour
     public GameObject[] monsters;
     int randomSpawnPoint, randomMonster;
     public static bool spawnAllowed;
-
+    public CharacterController karakter;
     void Start()
     {
         spawnAllowed = true;
@@ -16,7 +16,7 @@ public class DusmanYaratici : MonoBehaviour
     }
     void SpawnAMonster()
     {
-        if (spawnAllowed)
+        if (spawnAllowed && !karakter.oyunBittimi)
         {
             randomSpawnPoint = Random.Range(0, spawnPoints.Length);
             randomMonster = Random.Range(0, monsters.Length);

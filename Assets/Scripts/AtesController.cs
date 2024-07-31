@@ -6,34 +6,29 @@ public class AtesController : MonoBehaviour
 {
     public float speed = 10f; // Merminin hýzýný belirler
     public float lifetime = 2f; // Merminin ömrü (kaç saniye sonra yok olacak)
-
     private Transform target;
+    private Vector2 direction;
 
     private void Start()
     {
         // Merminin ömrünü baþlat
         Destroy(gameObject, lifetime);
-
-        // En yakýndaki düþmaný bul
-        FindClosestEnemy();
     }
 
     private void Update()
     {
-        if (target != null)
+        if (direction != Vector2.zero)
         {
-            // En yakýndaki düþmana doðru hareket et
-            Vector2 direction = (target.position - transform.position).normalized;
+            // Mermiyi ileriye doðru hareket ettir
             transform.Translate(direction * speed * Time.deltaTime, Space.World);
         }
         else
         {
-            // Hedef yoksa düz ileriye doðru hareket et
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
+            Debug.LogError("Direction is not set for the fireball.");
         }
     }
 
-    private void FindClosestEnemy()
+    public void FindClosestEnemy()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Dusman");
         float closestDistance = Mathf.Infinity;
@@ -52,6 +47,13 @@ public class AtesController : MonoBehaviour
         if (closestEnemy != null)
         {
             target = closestEnemy.transform;
+            direction = (target.position - transform.position).normalized;
+            transform.right = direction; // Ateþin ucunu hedefe doðru yönlendir
+        }
+        else
+        {
+            direction = transform.right; // Hedef yoksa düz ileriye doðru hareket et
+            Debug.Log("No enemy found. Default direction is set.");
         }
     }
 
@@ -63,7 +65,13 @@ public class AtesController : MonoBehaviour
             // Düþmaný etkileyin (örneðin, düþmanýn saðlýðýna zarar verin)
             // Bu kýsmý ihtiyacýnýza göre düzenleyebilirsiniz
 
+            Destroy(collision.gameObject); // Düþmaný yok et
             Destroy(gameObject); // Mermiyi yok et
         }
+    }
+
+    public void SetDirection(Vector2 direction)
+    {
+        this.direction = direction;
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    
     [SerializeField]
     private float hareketHizi = 5f;
 
@@ -12,10 +11,10 @@ public class CharacterController : MonoBehaviour
     private Animator anim;
 
     private bool atakYaptim;
-    private bool oyunBittimi;
+    public bool oyunBittimi;
 
     public GameObject atak;
-    public GameObject atakKonum;
+    public Transform atakKonum; // Transform olarak deðiþtirdik
 
     public int puan;
 
@@ -49,35 +48,41 @@ public class CharacterController : MonoBehaviour
 
     void HareketEttir()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
-        float hCoor = h * hareketHizi;
-        float vCoor = v * hareketHizi;
-
-        rb.velocity = new Vector2(hCoor, vCoor);
-
-        // Karakterin yönünü belirle
-        if (h != 0)
+        if (!oyunBittimi)
         {
-            // Karakter saða ya da sola hareket ediyorsa doðru yöne bakacak þekilde döndür
-            transform.localScale = new Vector3(Mathf.Sign(h) * 0.4f, 0.4f, 1);
+            float h = Input.GetAxis("Horizontal");
+            float v = Input.GetAxis("Vertical");
+            float hCoor = h * hareketHizi;
+            float vCoor = v * hareketHizi;
+
+            rb.velocity = new Vector2(hCoor, vCoor);
+
+            // Karakterin yönünü belirle
+            if (h != 0)
+            {
+                // Karakter saða ya da sola hareket ediyorsa doðru yöne bakacak þekilde döndür
+                transform.localScale = new Vector3(Mathf.Sign(h) * 0.4f, 0.4f, 1);
+            }
         }
     }
 
     void FaceMouse()
     {
-        Vector3 mousePosition = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        mousePosition.z = 0; // Z eksenini sýfýrla
+        if (!oyunBittimi)
+        {
+            Vector3 mousePosition = Input.mousePosition;
+            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            mousePosition.z = 0; // Z eksenini sýfýrla
 
-        // Karakter ile mouse arasýndaki yön
-        Vector2 direction = (mousePosition - transform.position).normalized;
+            // Karakter ile mouse arasýndaki yön
+            Vector2 direction = (mousePosition - transform.position).normalized;
 
-        // Karakterin bakýþ yönünü ayarla
-        atakKonum.transform.up = direction;
+            // Karakterin bakýþ yönünü ayarla
+            atakKonum.up = direction;
 
-        // Yukarý ve aþaðý hareket ederken z rotasyonunu sýfýrla
-        transform.rotation = Quaternion.Euler(0, 0, 0);
+            // Yukarý ve aþaðý hareket ederken z rotasyonunu sýfýrla
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 
     void AttackYap()
@@ -91,12 +96,19 @@ public class CharacterController : MonoBehaviour
                 atakYaptim = true;
 
                 // Ateþ topunu instantiate et
-                GameObject buyu = Instantiate(atak, atakKonum.transform.position, Quaternion.identity);
+                GameObject buyu = Instantiate(atak, atakKonum.position, Quaternion.identity);
 
                 // Merminin yönünü ayarla
-                Vector2 fireDirection = (atakKonum.transform.position - transform.position).normalized;
-                buyu.transform.right = fireDirection; // Merminin yönünü ayarla
-                buyu.GetComponent<Rigidbody2D>().velocity = fireDirection * 10f; // Hýzý belirle
+                AtesController fireball = buyu.GetComponent<AtesController>();
+                if (fireball != null)
+                {
+                    fireball.SetDirection(atakKonum.right); // Atýþ yönünü ayarla
+                    fireball.FindClosestEnemy(); // En yakýn düþmaný bul ve hedefle
+                }
+                else
+                {
+                    Debug.LogError("Fireball component could not be found on the instantiated object.");
+                }
 
                 atakYaptim = false;
             }
@@ -111,7 +123,7 @@ public class CharacterController : MonoBehaviour
             if (currentHealth <= 0)
             {
                 oyunBittimi = true;
-                // Oyun bitiþi ile ilgili iþlemler burada yapýlabilir
+                Destroy(gameObject);
             }
         }
     }

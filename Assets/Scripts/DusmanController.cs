@@ -10,7 +10,15 @@ public class DusmanController : MonoBehaviour
     private void Start()
     {
         // Player tagine sahip oyuncuyu bul ve hedef olarak belirle
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
+        else
+        {
+            Debug.LogError("Player object not found in the scene.");
+        }
     }
 
     private void Update()
@@ -38,10 +46,13 @@ public class DusmanController : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             // Oyuncuya çarptýðýnda yapýlacak iþlemler
-            // Örneðin, oyuncunun saðlýðýna zarar vermek
-            // collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(damageAmount);
 
             Destroy(gameObject); // Düþmaný yok et
+        }
+
+        if (collision.gameObject.CompareTag("Ates"))
+        {
+            Destroy(gameObject); // Ates gelince düþmanýn ölmesi
         }
     }
 }
