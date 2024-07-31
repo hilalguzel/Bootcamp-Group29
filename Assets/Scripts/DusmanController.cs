@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class DusmanController : MonoBehaviour
 {
-    public float speed = 3f; // Düþmanýn hýzýný belirler
-    private Transform player; // Hedef oyuncunun transformu
+    public float speed = 3f;
+    private Transform player;
 
     private void Start()
     {
-        // Player tagine sahip oyuncuyu bul ve hedef olarak belirle
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
         if (playerObject != null)
         {
@@ -25,36 +24,29 @@ public class DusmanController : MonoBehaviour
     {
         if (player != null)
         {
-            // Oyuncuya doðru hareket et
             Vector2 direction = (player.position - transform.position).normalized;
             transform.Translate(direction * speed * Time.deltaTime, Space.World);
 
-            // Düþmanýn yüzünü oyuncuya doðru döndür
             if (player.position.x < transform.position.x)
             {
-                transform.localScale = new Vector3(-1, 1, 1); // Sola bak
+                transform.localScale = new Vector3(-1, 1, 1);
             }
             else
             {
-                transform.localScale = new Vector3(1, 1, 1); // Saða bak
+                transform.localScale = new Vector3(1, 1, 1);
             }
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Oyuncuya çarptýðýnda yapýlacak iþlemler
-
-            Destroy(gameObject); // Düþmaný yok et
+            Destroy(gameObject);
         }
-
         if (collision.gameObject.CompareTag("Ates"))
         {
-            Destroy(gameObject); // Ates gelince düþmanýn ölmesi
+            Destroy(gameObject);
         }
     }
 }
-
-

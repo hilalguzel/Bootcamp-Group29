@@ -9,20 +9,17 @@ public class CharacterController : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator anim;
-
     private bool atakYaptim;
     public bool oyunBittimi;
-
     public GameObject atak;
-    public Transform atakKonum; // Transform olarak deðiþtirdik
+    public Transform atakKonum;
 
     public int puan;
-
     public float currentHealth = 10f;
     public float maxHealth = 10f;
 
-    public float attackInterval = 1.5f; // Ateþ etme aralýðý
-    private float attackTimer = 0f; // Zamanlayýcý
+    public float attackInterval = 1.5f;
+    private float attackTimer = 0f;
 
     private void Awake()
     {
@@ -35,8 +32,6 @@ public class CharacterController : MonoBehaviour
         puan = 0;
         anim = GetComponent<Animator>();
         atakYaptim = false;
-        currentHealth = 10f;
-        maxHealth = 10f;
     }
 
     void Update()
@@ -54,13 +49,10 @@ public class CharacterController : MonoBehaviour
             float v = Input.GetAxis("Vertical");
             float hCoor = h * hareketHizi;
             float vCoor = v * hareketHizi;
-
             rb.velocity = new Vector2(hCoor, vCoor);
 
-            // Karakterin yönünü belirle
             if (h != 0)
             {
-                // Karakter saða ya da sola hareket ediyorsa doðru yöne bakacak þekilde döndür
                 transform.localScale = new Vector3(Mathf.Sign(h) * 0.4f, 0.4f, 1);
             }
         }
@@ -72,15 +64,11 @@ public class CharacterController : MonoBehaviour
         {
             Vector3 mousePosition = Input.mousePosition;
             mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-            mousePosition.z = 0; // Z eksenini sýfýrla
+            mousePosition.z = 0;
 
-            // Karakter ile mouse arasýndaki yön
             Vector2 direction = (mousePosition - transform.position).normalized;
-
-            // Karakterin bakýþ yönünü ayarla
             atakKonum.up = direction;
 
-            // Yukarý ve aþaðý hareket ederken z rotasyonunu sýfýrla
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
@@ -94,22 +82,17 @@ public class CharacterController : MonoBehaviour
             {
                 attackTimer = 0f;
                 atakYaptim = true;
-
-                // Ateþ topunu instantiate et
                 GameObject buyu = Instantiate(atak, atakKonum.position, Quaternion.identity);
-
-                // Merminin yönünü ayarla
                 AtesController fireball = buyu.GetComponent<AtesController>();
                 if (fireball != null)
                 {
-                    fireball.SetDirection(atakKonum.right); // Atýþ yönünü ayarla
-                    fireball.FindClosestEnemy(); // En yakýn düþmaný bul ve hedefle
+                    fireball.SetDirection(atakKonum.right);
+                    fireball.FindClosestEnemy();
                 }
                 else
                 {
                     Debug.LogError("Fireball component could not be found on the instantiated object.");
                 }
-
                 atakYaptim = false;
             }
         }
@@ -128,6 +111,3 @@ public class CharacterController : MonoBehaviour
         }
     }
 }
-
-
-

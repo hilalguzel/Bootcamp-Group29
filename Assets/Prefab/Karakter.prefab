@@ -156,7 +156,7 @@ MonoBehaviour:
   hareketHizi: 5
   oyunBittimi: 0
   atak: {fileID: 4422092913180927766, guid: d68df0b8c7a5e9a40b6a92c71c8b2a02, type: 3}
-  atakKonum: {fileID: 1833392403140864545}
+  atakKonum: {fileID: 2274328893574726376}
   puan: 0
   currentHealth: 10
   maxHealth: 10
