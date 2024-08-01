@@ -108,3 +108,9 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
 - **Ürün Çıktı Dosyası** : [![Exe link]](https://drive.google.com/file/d/1CmBVGd4vuTDFOOIroLVQFOd-PPoCXvQT/view?usp=drive_link)
 
 
+- **Sprint Review**: 
+
+  - Takım ruhunu koruyup Scrum boyunca özveriyle çalışıldığı için takım üyeleri birbirini tebrik etti.
+  - 2 adet map tasarımı, birden fazla platform kodları, farklı mekanikler, karakter ve platform animasyonları, 2d tasarım assetleri, kamera entegrasyonu yapılmıştır.
+  - Tamamlanması gereken 36 puanlık backlog puanı tamamlanmıştır.
+  - Sprint Review katılımcıları: Hilal Güzel, Hasan Can Öten, Halil İbrahim Yavuz.
