@@ -103,4 +103,7 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
 ---
 - ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/Ekran%20Resmi%202024-08-02%2000.07.54.png)
 ---
+- **Ürün Final Videosu**: Oyunun 1 dakikalık trailer videosu yapılmıştır.
+- **Final Video**: [![Mystiq: The Wizard's Journey]](https://www.youtube.com/watch?v=KzcXhRe5AUo)
+
 
