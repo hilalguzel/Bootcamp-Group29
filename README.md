@@ -115,7 +115,7 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
   - Tamamlanması gereken 36 puanlık backlog puanı tamamlanmıştır.
   - Sprint Review katılımcıları: Hilal Güzel, Hasan Can Öten, Halil İbrahim Yavuz.
 
-  - **Sprint Retrospective:**
+- **Sprint Retrospective:**
   - Oyunun genel oynanışını, 2 ay boyunca geçirdiğimiz zaman üzerine konuşuldu.
   - Neler yapılıp neler yapılamazdı bunun üzerine konuşuldu.
   - Ekip kendi içinde iletişimde kalacaklarını anlaşıldı.
