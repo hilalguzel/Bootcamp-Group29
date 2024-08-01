@@ -105,6 +105,6 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
 ---
 - **Ürün Final Videosu**: Oyunun 1 dakikalık trailer videosu yapılmıştır.
 - **Final Video**: [![Mystiq: The Wizard's Journey]](https://www.youtube.com/watch?v=KzcXhRe5AUo)
-- **Ürün Çıktı Dosyası** : https://drive.google.com/file/d/1CmBVGd4vuTDFOOIroLVQFOd-PPoCXvQT/view?usp=drive_link
+- **Ürün Çıktı Dosyası** : [![Exe link]](https://drive.google.com/file/d/1CmBVGd4vuTDFOOIroLVQFOd-PPoCXvQT/view?usp=drive_link)
 
 
