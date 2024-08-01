@@ -14,7 +14,7 @@ U29 Unity Takımı
 
 ## Oyun Açıklaması
 
-Oyunumuz Brotato oyunun mekaniklerini baz alarak tasarlanan bir oyundur. 2D olan bu oyunumuzda ana karakterimiz bir büyücüdür. Bu büyücü 30 sanşye boyunca üzerine gelen düşmanları asasıyla büyü saçarak yok eden bir oyundur. 30 saniye geçtikten sonra oyuncu dilerse upgrade sistemi ile karakter özelliklerini yükseltebilir bu yükseltmeyi de yok ettiği düşmanlardan kazandığı coinler ile yapabilecektir. 
+Oyunumuz Brotato oyunun mekaniklerini baz alarak tasarlanan bir oyundur. 2D olan bu oyunumuzda ana karakterimiz bir büyücüdür. Bu büyücü 30 saniye boyunca üzerine gelen düşmanları asasıyla büyü saçarak yok eden bir oyundur. 30 saniye geçtikten sonra oyuncu dilerse upgrade sistemi ile karakter özelliklerini yükseltebilir bu yükseltmeyi de yok ettiği düşmanlardan kazandığı coinler ile yapabilecektir. 
 
 ## Oyun Özellikleri
 - 2D
@@ -89,12 +89,14 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
   Toplantı ScreenShotları <blockquote class="imgur-embed-pub" lang="en" data-id="a/tT5yDdA"  ><a href="https://imgur.com/gallery/sprint-2-screenshots-2QMVJmz">Discord</a></blockquote>
 
 - **Sprint Retrospective:**
-    - **Sprint 2 için alınan puan 11'dir.** Map tasarımı diğer sprint'e kalmıştır.
+    - **Sprint 2 için alınan puan 12'dir.** 
     - Takım içi daha hızlı aksiyon alması adına uyarılmıştır.
     - Karakterin çoğu animasyonları ve mekanikleri entegre edilmiştir.
     - Map'e başlandı ama devamını bir diğer sprinte devam edilesi kararı alınmıştır.
 
   ---
 # **SPRINT 3**
-- **Sprint içinde tamamlanması tahmin edilen puan**: İkinci sprintte online sistemini entegre edilemediğinden dolayı üçüncü sprint  puanı 15 olarak belirlenmiştir.
+- **Sprint içinde tamamlanması tahmin edilen puan**: Oyunun genel hatları ve temel oynanış şekli olacak bu sprintin puanı 14 olarak belirlenmiştir.
+- **Daily Scrum**: Daily Scrum toplantıları yoğunluktan toplantı değilde whatsapp konuşmaları üzerine ilerlemiştir. Burada oyunun tüm aşamaları ve mekanikler hakkında tartışmalar yapılıp karar alındıktan sonra oyuna uygulanmıştır.
+- 
 
