@@ -6,7 +6,7 @@ U29 Unity Takımı
 ## Takım Üyeleri
 - ***Hilal Güzel*** - Scrum Master / Developer
 - ***Halil İbrahim Yavuz*** - Level Designer
-- ***Hasan Can Öten*** - Developer / Developer
+- ***Hasan Can Öten*** - Developer / Product Owner
 
 ## Oyun İsmi
 
@@ -92,6 +92,8 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
     - Takım içi daha hızlı aksiyon alması adına uyarılmıştır.
     - Karakterin çoğu animasyonları ve mekanikleri entegre edilmiştir.
     - Map'e başlandı ama devamını bir diğer sprinte devam edilesi kararı alınmıştır.
-      
 
+  ---
+# **SPRINT 3**
+- **Sprint içinde tamamlanması tahmin edilen puan**: İkinci sprintte online sistemini entegre edilemediğinden dolayı üçüncü sprint  puanı 15 olarak belirlenmiştir.
 
