@@ -114,3 +114,9 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
   - 2 adet map tasarımı, birden fazla platform kodları, farklı mekanikler, karakter ve platform animasyonları, 2d tasarım assetleri, kamera entegrasyonu yapılmıştır.
   - Tamamlanması gereken 36 puanlık backlog puanı tamamlanmıştır.
   - Sprint Review katılımcıları: Hilal Güzel, Hasan Can Öten, Halil İbrahim Yavuz.
+
+  - **Sprint Retrospective:**
+  - Oyunun genel oynanışını, 2 ay boyunca geçirdiğimiz zaman üzerine konuşuldu.
+  - Neler yapılıp neler yapılamazdı bunun üzerine konuşuldu.
+  - Ekip kendi içinde iletişimde kalacaklarını anlaşıldı.
+  - Emeklere, çalışmalara ve sebata teşekkür edildi.
