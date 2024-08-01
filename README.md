@@ -98,5 +98,9 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
 # **SPRINT 3**
 - **Sprint içinde tamamlanması tahmin edilen puan**: Oyunun genel hatları ve temel oynanış şekli olacak bu sprintin puanı 14 olarak belirlenmiştir.
 - **Daily Scrum**: Daily Scrum toplantıları yoğunluktan toplantı değilde whatsapp konuşmaları üzerine ilerlemiştir. Burada oyunun tüm aşamaları ve mekanikler hakkında tartışmalar yapılıp karar alındıktan sonra oyuna uygulanmıştır.
-- 
+- **Sprint board update**: Sprint board screenshot:
+- ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/Ekran%20Resmi%202024-08-02%2000.07.38.png)
+---
+- ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/Ekran%20Resmi%202024-08-02%2000.07.54.png)
+---
 
