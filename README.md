@@ -68,7 +68,8 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
   ---
 # **SPRINT 2**
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: İkinci sprintte online sistemini entegre edilemediğinden dolayı üçüncü sprint  puanı 15 olarak belirlenmiştir.
+- **Sprint içinde tamamlanması tahmin edilen puan**: 12 Puan
+- **Daily Scrum**: Daily Scrum toplantıları hem Whatsapp üzerinden hem de Discord üzerinden devam etmiştir. Discord'da haftada birkaç gün toplantılar yapılmıştır. 
 
 - **Sprint board update**: Sprint board screenshotı:
   ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/Ekran%20Resmi%202024-07-22%2019.38.52.png)
