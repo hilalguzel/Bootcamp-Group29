@@ -32,11 +32,11 @@ Oyunumuz Brotato oyunun mekaniklerini baz alarak tasarlanan bir oyundur. 2D olan
 # **SPRINT 1**
 - Takımlar açıklandıktan hemen sonra takım tanışma toplantısı yapılıp whatsapp, discord ve slack grupları kurulmuştur.
 
-  <img src = "https://github.com/hilalguzel/Bootcamp-Group29/blob/cf063152036c8645d17dd5565e52ffd51a67b6c1/Ekran%20Resmi%202024-07-07%2022.38.14.png" />
+  <img src="screen-shoots/Ekran%20Resmi%202024-07-07%2022.38.14.png" />
   <p></p>
-  <img src="https://github.com/hilalguzel/Bootcamp-Group29/blob/cf063152036c8645d17dd5565e52ffd51a67b6c1/Ekran%20Resmi%202024-07-07%2022.32.24.png" width="800" />
+  <img src="screen-shoots/Ekran%20Resmi%202024-07-07%2022.32.24.png" width="800" />
   <p></p>
-  <img src = "https://github.com/hilalguzel/Bootcamp-Group29/blob/7b5907482d217efb4aa8f1872f6765ccf19776ab/Ekran%20Resmi%202024-07-09%2020.35.12.png" />
+  <img src="screen-shoots/Ekran%20Resmi%202024-07-09%2020.35.12.png" />
   
 - Verilen direktifler doğrultusunda korku oyunun karar verildi.
 - Sonrasında fikirler tekrar tartışarak  **Mystiq** oyununa karar verildi.
@@ -52,7 +52,7 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
 - **Developing Grubu Üyeleri**: Hilal Güzel, Hasan Can Öte, İlayda Garipoğlu.
 - **Sprint 1 board task and to-do list**: Notion Task Screenshot:
   
-<img src = "https://github.com/hilalguzel/Bootcamp-Group29/blob/main/Ekran%20Resmi%202024-07-09%2021.41.15.png"/>
+<img src="screen-shoots/Ekran%20Resmi%202024-07-09%2021.41.15.png"/>
 <p></p>
 
 **Sprint Review**:
@@ -72,13 +72,13 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
 - **Daily Scrum**: Daily Scrum toplantıları hem Whatsapp üzerinden hem de Discord üzerinden devam etmiştir. Discord'da haftada birkaç gün toplantılar yapılmıştır. 
 
 - **Sprint board update**: Sprint board screenshotı:
-  ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/Ekran%20Resmi%202024-07-22%2019.38.52.png)
+  ![Backlog](screen-shoots/Ekran%20Resmi%202024-07-22%2019.38.52.png)
 
   - **Ürün Durumu**: Ekran görüntüleri:
     
-  ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/0_Fallen_Angels_Idle_003.png)
+  ![Backlog](screen-shoots/0_Fallen_Angels_Idle_003.png)
 
-  ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/0_Fallen_Angels_Slashing_006.png)
+  ![Backlog](screen-shoots/0_Fallen_Angels_Slashing_006.png)
 
 - **Sprint Review**: 
 
@@ -99,9 +99,9 @@ Toplantı ve Whatsapp ScreenShotları <blockquote class="imgur-embed-pub" lang="
 - **Sprint içinde tamamlanması tahmin edilen puan**: Oyunun genel hatları ve temel oynanış şekli olacak bu sprintin puanı 14 olarak belirlenmiştir.
 - **Daily Scrum**: Daily Scrum toplantıları yoğunluktan toplantı değilde whatsapp konuşmaları üzerine ilerlemiştir. Burada oyunun tüm aşamaları ve mekanikler hakkında tartışmalar yapılıp karar alındıktan sonra oyuna uygulanmıştır.
 - **Sprint board update**: Sprint board screenshot:
-- ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/Ekran%20Resmi%202024-08-02%2000.07.38.png)
+- ![Backlog](screen-shoots/Ekran%20Resmi%202024-08-02%2000.07.38.png)
 ---
-- ![Backlog ](https://github.com/hilalguzel/Bootcamp-Group29/blob/main/screen-shoots/Ekran%20Resmi%202024-08-02%2000.07.54.png)
+- ![Backlog](screen-shoots/Ekran%20Resmi%202024-08-02%2000.07.54.png)
 ---
 - **Ürün Final Videosu**: Oyunun 1 dakikalık trailer videosu yapılmıştır.
 - **Final Video**: [![Mystiq: The Wizard's Journey]](https://www.youtube.com/watch?v=KzcXhRe5AUo)
